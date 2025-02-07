@@ -1,14 +1,15 @@
 import React from "react";
-import { FaBell } from "react-icons/fa";
-import { MdGTranslate } from "react-icons/md";
+import { FaBell, FaSearch, FaMicrophone } from "react-icons/fa";
+import { MdGTranslate, MdLocationOn } from "react-icons/md";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
-import { BiBuildings, BiUser } from "react-icons/bi";
+import { BiBuildings} from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
-import { IoMdMegaphone } from "react-icons/io";
+import { IoMdMegaphone} from "react-icons/io";
 import "./Header.css";
 
 const Header = () => {
   return (
+    <div className="container">
     <header className="header">
       {/* Logo */}
       <div className="header-logo">
@@ -36,10 +37,27 @@ const Header = () => {
         </div>
         <FaBell className="icon" />
         <button className="login-button">
-          <BiUser /> Login / Sign Up
+           Login / Sign Up
         </button>
       </nav>
     </header>
+      {/* Search Section */}
+      <div className="search-section">
+        <h2>Search across <span className="highlight">‘4.7 Crore+’ Businesses</span></h2>
+        <div className="search-container">
+          <div className="search-location">
+            <MdLocationOn className="icon" />
+            <input type="text" placeholder="Betkuli, Karwar" />
+          </div>
+          <div className="search-box">
+            <input type="text" placeholder="Search in Karwar" />
+            <FaMicrophone className="icon" />
+            <button className="search-button"><FaSearch /></button>
+          </div>
+        </div>
+      </div>
+     
+    </div>
   );
 };
 
