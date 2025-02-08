@@ -4,13 +4,13 @@ import { MdGTranslate, MdLocationOn } from "react-icons/md";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 import { BiBuildings} from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
-import { IoMdMegaphone} from "react-icons/io";
+import { IoMdMegaphone, IoMdDownload } from "react-icons/io";
 import "./Header.css";
 
 const Header = () => {
   return (
     <div className="container">
-    <header className="header">
+      <header className="header">
       {/* Logo */}
       <div className="header-logo">
         <span className="logo-highlight">Just</span>dial
@@ -54,8 +54,16 @@ const Header = () => {
             <FaMicrophone className="icon" />
             <button className="search-button"><FaSearch /></button>
           </div>
+          {/* Download Section */}
+          <div className="download-section">
+            <button className="download-button">
+            Download App <IoMdDownload className="icon" />
+            </button>
+          </div>
         </div>
+        
       </div>
+      
      
     </div>
   );
