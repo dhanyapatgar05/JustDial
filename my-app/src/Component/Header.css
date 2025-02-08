@@ -52,9 +52,10 @@
   .business-badge {
     background-color: #E55147;
     color: white;
+    font-size: 10px;
     font-weight: bold;
     padding: 0px 8px;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     position: absolute;
     top: -16px;
   }
@@ -140,7 +141,7 @@
 
 .search-button {
   background-color: #FF5E09;
-  border: none;
+  border: white;
   border-radius: 5px;
   padding: 8px 12px;
   cursor: pointer;
@@ -169,6 +170,7 @@
 }
 
 .download-button .icon {
+  
   margin-left: 5px;
   color: rgb(52, 122, 162);
 }

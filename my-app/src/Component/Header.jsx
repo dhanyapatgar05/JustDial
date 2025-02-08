@@ -1,10 +1,12 @@
 import React from "react";
-import { FaBell, FaSearch, FaMicrophone } from "react-icons/fa";
+import { FaSearch, FaMicrophone,FaChartLine } from "react-icons/fa";
 import { MdGTranslate, MdLocationOn } from "react-icons/md";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
-import { BiBuildings} from "react-icons/bi";
-import { AiOutlineMail } from "react-icons/ai";
+//import { BiBuildings} from "react-icons/bi";
+import {  IoMailUnreadOutline } from "react-icons/io5";
+//import { AiOutlineMail } from "react-icons/ai";
 import { IoMdMegaphone, IoMdDownload } from "react-icons/io";
+import { BiSolidBellRing } from "react-icons/bi";
 import "./Header.css";
 
 const Header = () => {
@@ -24,7 +26,7 @@ const Header = () => {
         <span className="nav-item">We are Hiring</span>
         <span className="nav-item">Investor Relations</span>
         <div className="nav-item">
-          <AiOutlineMail className="icon" /> Leads
+          <IoMailUnreadOutline className="icon" /> Leads
         </div>
         <div className="nav-item">
           <IoMdMegaphone className="icon" /> Advertise
@@ -32,10 +34,10 @@ const Header = () => {
         <div className="business-container">
           <div className="business-badge">BUSINESS</div>
           <div className="nav-item">
-            <BiBuildings className="icon" /> Free Listing
+            <FaChartLine className="icon" /> Free Listing
           </div>
         </div>
-        <FaBell className="icon" />
+        <BiSolidBellRing className="icon" />
         <button className="login-button">
            Login / Sign Up
         </button>
