@@ -1,11 +1,12 @@
 import React from "react";
 import { FaSearch, FaMicrophone,FaChartLine } from "react-icons/fa";
-import { MdGTranslate, MdLocationOn } from "react-icons/md";
+import { MdGTranslate } from "react-icons/md";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 //import { BiBuildings} from "react-icons/bi";
 import {  IoMailUnreadOutline } from "react-icons/io5";
 //import { AiOutlineMail } from "react-icons/ai";
 import { IoMdMegaphone, IoMdDownload } from "react-icons/io";
+import { CiLocationOn } from "react-icons/ci";
 import { BiSolidBellRing } from "react-icons/bi";
 import "./Header.css";
 
@@ -45,10 +46,10 @@ const Header = () => {
     </header>
       {/* Search Section */}
       <div className="search-section">
-        <h2>Search across <span className="highlight">‘4.7 Crore+’ Businesses</span></h2>
+        <h2>Search across ‘4.7 Crore+’ <span className="highlight"> Businesses</span></h2>
         <div className="search-container">
           <div className="search-location">
-            <MdLocationOn className="icon" />
+            <CiLocationOn className="icon" />
             <input type="text" placeholder="Betkuli, Karwar" />
           </div>
           <div className="search-box">
