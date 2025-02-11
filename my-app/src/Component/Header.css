@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
     gap: 20px;
-    font-size: 14px;
+    font-size: 16px;
     color: #4b5563;
   }
   
@@ -55,7 +55,7 @@
     color: white;
     font-size: 10px;
     font-weight: bold;
-    padding: 0px 8px;
+    padding: 2px 8px;
     /* border-radius: 4px; */
     position: absolute;
     top: -16px;
