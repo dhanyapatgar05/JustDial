@@ -174,11 +174,59 @@
   align-items: center;
   cursor: pointer;
   white-space: nowrap;
+  overflow: hidden;
 }
 
-.download-button .icon {
-  
-  margin-left: 5px;
-  color: rgb(57, 132, 175);
+/* download section start */
+.download-section {
+  flex-shrink: 0;
+  margin-left: 400px;
+  margin-top: -50px;
 }
+
+.download-button {
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 6px 12px; /* Keep original button padding */
+  border-radius: 6px;
+  position: relative; /* Needed for absolute positioning */
+  overflow: visible; /* Allows the icon wrapper to extend outside */
+}
+
+/* Text section */
+.download-text {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  
+}
+
+/* Icon wrapper - extends outside the button */
+.download-icon-wrapper {
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px; /* Set width */
+  height: 50px; /* Increased height */
+  position: absolute;
+  right: -15px; /* Moves it outside */
+  top: 50%;
+  transform: translateY(-50%);
+  /* border-radius: 6px; */
+}
+
+/* Icon styling */
+.download-icon-wrapper .icon {
+  
+  color: #1073C4;
+  font-size: 20px;
+}
+
+
 

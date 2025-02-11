@@ -1,11 +1,11 @@
 import React from "react";
 import { FaSearch, FaMicrophone,FaChartLine } from "react-icons/fa";
-import { MdGTranslate } from "react-icons/md";
+import { MdGTranslate, MdArrowDownward  } from "react-icons/md";
 import { HiOutlineSpeakerphone } from "react-icons/hi";
 //import { BiBuildings} from "react-icons/bi";
 import {  IoMailUnreadOutline } from "react-icons/io5";
 //import { AiOutlineMail } from "react-icons/ai";
-import { IoMdMegaphone, IoMdDownload } from "react-icons/io";
+import { IoMdMegaphone } from "react-icons/io";
 import { CiLocationOn } from "react-icons/ci";
 import { BiSolidBellRing } from "react-icons/bi";
 import "./Header.css";
@@ -58,11 +58,17 @@ const Header = () => {
             <button className="search-button"><FaSearch /></button>
           </div>
           {/* Download Section */}
+         {/* Download Section */}
           <div className="download-section">
             <button className="download-button">
-            Download App <IoMdDownload className="icon" />
+              <span className="download-text">Download App</span>
+              <span className="download-icon-wrapper"> 
+              <MdArrowDownward  className="icon" /> 
+              
+              </span>
             </button>
           </div>
+
         </div>
         
       </div>
